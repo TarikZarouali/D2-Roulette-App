@@ -1,0 +1,31 @@
+Node.js and npm
+
+node_modules/ package-lock.json
+
+Electron build outputs
+
+dist/ Destiny2RoulettePortable.exe
+
+electron-builder cache
+
+electron-builder-cache/
+
+Logs
+
+.log npm-debug.logyarn-debug.log* yarn-error.log*
+
+Editor and OS files
+
+.DS_Store Thumbs.db .vscode/ *.sublime-project *.sublime-workspace
+
+Temporary files
+
+*.tmp *.bak *.swp *~
+
+Sensitive data
+
+.env .env.local .env.development.local .env.test.local .env.production.local
+
+Local development
+
+*.local
