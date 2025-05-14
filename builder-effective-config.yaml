@@ -1,0 +1,17 @@
+directories:
+  output: .
+  buildResources: build
+appId: com.d2roulette.app
+productName: Destiny 2 Roulette
+win:
+  target: portable
+  icon: assets/destiny-logo.png
+portable:
+  artifactName: Destiny2RoulettePortable.exe
+files:
+  - filter:
+      - index.html
+      - style.css
+      - script.js
+      - main.js
+electronVersion: 36.2.0

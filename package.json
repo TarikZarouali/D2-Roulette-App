@@ -1,0 +1,48 @@
+{
+  "name": "d2-roulette-app",
+  "version": "1.0.0",
+  "description": "Roulette app for random content in Destiny 2",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TarikZarouali/Destiny2RandomContent.git"
+  },
+  "author": "Tarik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TarikZarouali/Destiny2RandomContent/issues"
+  },
+  "homepage": "https://github.com/TarikZarouali/Destiny2RandomContent#readme",
+  "devDependencies": {
+    "electron": "^36.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2"
+  },
+  "build": {
+    "appId": "com.d2roulette.app",
+    "productName": "Destiny 2 Roulette",
+    "win": {
+      "target": "portable",
+      "icon": "assets/destiny-logo.png"
+    },
+    "portable": {
+      "artifactName": "Destiny2RoulettePortable.exe"
+    },
+    "directories": {
+      "output": "." 
+    },
+    "files": [
+      "index.html",
+      "style.css",
+      "script.js",
+      "main.js"
+    ]
+  }
+}

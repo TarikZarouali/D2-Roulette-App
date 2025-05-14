@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./assets/fonts/Orbitron-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Teko';
+  src: url('./assets/fonts/Teko-Regular.woff2') format('woff2');
+}
     :root {
       --destiny-blue: #00ffff;
       --destiny-purple: #9d4edd;
@@ -6,6 +13,7 @@
       --destiny-dark: #0d0d15;
       --destiny-light: #e0e0e0;
     }
+
 
     * {
       margin: 0;
