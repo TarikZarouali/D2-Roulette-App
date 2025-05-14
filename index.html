@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destiny 2 Activity Wheel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Teko:wght@500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  <div class="container">
+   
+    
+    <h1>
+      <span class="title-word title-word-1">ENDGAME</span>
+      <span class="title-word title-word-2">ACTIVITY</span>
+      <span class="title-word title-word-3">ROULETTE</span>
+    </h1>
+    
+    <div class="wheel-wrapper">
+      <div class="arrow"></div>
+      <div class="glow-effect"></div>
+      <canvas id="wheel" width="600" height="600"></canvas>
+    </div>
+    
+    <div class="controls">
+      <button id="spinButton" onclick="spinWheel()">
+        <span class="button-text">SPIN</span>
+        <span class="button-icon">
+          <i class="fas fa-sync-alt"></i>
+        </span>
+      </button>
+      
+    </div>
+    
+    <div id="selected" class="result-box">
+      <div class="result-content">
+        <div class="ghost">
+          <img src="https://www.destinypedia.com/images/thumb/7/71/Ghost.png/200px-Ghost.png" alt="Ghost">
+        </div>
+        <div class="result-text">Click SPIN to get your challenge!</div>
+      </div>
+    </div>
+    
+    <div class="particles" id="particles"></div>
+  </div>
+  
+  <audio id="spinSound" src="https://assets.codepen.io/21542/spin-sound.mp3" preload="auto"></audio>
+  <audio id="winSound" src="https://assets.codepen.io/21542/win-sound.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
